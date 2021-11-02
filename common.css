@@ -1,0 +1,332 @@
+ 															/*header*/
+
+
+html{scroll-behavior:smooth;}
+
+
+h1 {
+    font-family: "Lucida Handwriting", serif;  
+    font-weight: 600;
+    color:rgb(243, 123, 54);
+    letter-spacing: 2;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px black ;
+    z-index: 3;
+    margin-left: 25px;
+}
+h2{
+    font-family: "Allerta Stencil", Sans-serif;
+    font-size: 40px;
+    letter-spacing: 3;
+    text-align: center;
+    color: white;
+}
+
+.head{
+    width: 100vw;
+    margin-left: -8px;
+    position: fixed;
+    z-index: 9999;
+    background-color: transparent;
+    height: 96px;
+}
+.head-active{
+    background-size: cover;
+    transition-property: background-image;
+    transition-duration: .3s;
+    transition-timing-function:ease;
+    background-image: url(project/Screenshot\ 2021-10-20\ 133254.png);
+}
+
+.logo{
+    height: 80px;
+    width: 80px;
+    margin:-15px 30px -15px 0px;
+    opacity: .8;
+}
+
+.main_image{
+    width: 99vw;
+    height: 700px;
+    margin-left: -8px;
+}
+
+.top_title_and_logo{
+    width: 100vw;
+    float: left;
+    margin-left: 80px;
+    margin-right: -61%;
+    height: 96px;
+    text-decoration:underline ;
+    text-decoration-color: rgb(247, 205, 114);
+    
+}
+
+.top_list{
+    width: 500px;
+    height: 96px;
+    padding-left: 25%;
+    margin-left: -52px;
+    display: flex ;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+                                                                /*menu*/
+
+
+.menu >li {
+    list-style:none;
+    font-size:1.4rem;
+    display: inline-block;
+    text-align: center;
+    margin-top:-15px;
+    padding-right: 10px;
+}
+#home_img:hover{
+    transition-property: box-shadow;
+    transition-duration: .1s;
+    transition-timing-function:linear;
+    box-shadow: 1px 1px 1px 1px black;
+    
+}
+#black-borders .black-border{
+    font-size: 1.4rem;
+    justify-content: space-around;
+    color: black;
+    display:inline-block;
+    font-family: "Monaco", Monospace;  
+}
+
+.black-border>a:link{
+    font-size: 1.4rem;
+    justify-content: space-around;
+    color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    font-family: "Monaco", Monospace;  
+    text-decoration: none;
+    word-spacing: -6px;
+}
+
+.black-border>a:visited{
+    justify-content: space-around;
+    color:rgba(0, 0, 0, 0.7);
+}
+.black-border>a:visited:hover{
+    justify-content: space-around;
+    color:black;
+    transition-property: color,;
+    transition-duration: .1s;
+    transition-timing-function: linear;
+    text-shadow: 0.5px 0.5px black;
+}
+.black-border>a:hover{
+    justify-content: space-around;
+    color: black;
+    transition-property: color,;
+    transition-duration: .1s;
+    transition-timing-function: linear;
+    text-shadow: 0.5px 0.5px black;
+}
+
+
+.black-border{
+    border:none;
+    font-family: "Monaco", Monospace;  
+    color:rgba(0, 0, 0, 0.7) ;
+background:none;
+font-weight:bold;
+font-size: 1.4rem;
+height: 96px;
+text-decoration:none;
+letter-spacing: 0px;
+word-spacing: -5px;
+
+}
+
+.black-border:hover{
+    color: black;
+    transition-property: color,background-color;
+    transition-duration: .1s;
+    transition-timing-function: linear;
+    text-shadow: 0.5px 0.5px black;
+    background-color: rgba(245, 245, 245, 0.212);
+}
+
+
+.dropdown {
+    overflow:visible;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgba(0,0,0,0.9);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+
+.dropdown-content a {
+    float: none;
+    color:whitesmoke;
+    font-size: 20px;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+    text-decoration:none ;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+  																		/*body*/
+                                                                          
+
+#white{
+    margin: 0px 7.5vw;
+    width: 85vw;
+    background-color: black;
+    border-radius: 15px;
+    position:absolute;
+    top:600px;
+    height: 1600px;
+}
+
+body{
+    background-color: black;
+    margin-top: -5px;
+    position: relative;
+}
+#data{
+    display: flex;
+    flex-direction: row;
+    
+}
+#data1{
+    display: inline-block;
+    width : 30%;
+}
+#data1>img{
+    height: 250px;
+    width: 425px;
+    margin-left: 15%;
+    margin-top: 20%;
+    margin-bottom: 40%;
+}
+#data1>img:hover{
+    box-shadow: 2px 2px 8px rgb(202, 202, 202);
+	transition-property: height,width,box-shadow;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+}
+#data2{
+    width:60%;
+    margin-left: 5%;
+}
+#data2>span{
+    color:white;
+    line-height: 1.8rem;
+    font-family: monospace;
+}
+
+
+													/*fottor*/
+#footer{
+    position:absolute;  
+    margin-left:-8px; 
+    margin-right:-8px;
+    width: 99vw;
+    padding-top: 100px ;
+}
+.contact_info{
+    height:240px;
+    color: white;
+    text-align: center;
+    background-image: url(https://cdn.wallpapersafari.com/23/30/rfbQ4s.jpg);
+    background-size: cover;
+    padding-left: 2%;
+}
+
+td{	padding:10px;
+    border:none; color:white;
+    width:400px;
+    justify-content:center;
+    align-content:center;
+    font-family: 'Baloo 2', cursive;
+}
+
+td.side{
+    border-right:1px solid white; 
+}
+
+.downton{
+    font-size:30px;
+    padding:10px;
+    font-family: 'Patrick Hand SC', cursive;
+}
+
+.wanna_hear{
+    font-size:20px;
+    padding:10px;
+    font-family: 'Patrick Hand SC', cursive;
+}
+
+a{
+    text-decoration:none;
+    color: rgb(5, 255, 255);
+}
+.newsletter-submit{
+    border-radius:10px;
+    background:none;
+    color:white;
+    font-weight:bold;
+    border:none;
+}
+.newsletter-submit:hover{
+    border:1px solid white;
+}
+img{
+    height:30px;
+    width:30px;
+    border-radius:10px;
+}
+
+span{
+    font-size: 20px;
+    text-align: center;
+    vertical-align: center;
+    font-family: 'Gochi Hand', cursive;
+}
+
+.emails{
+    font-family: 'Patrick Hand', cursive;
+}
+
+.main_button:hover{
+    background-color:purple;
+    color:white;
+    font-weight:bold;
+    padding:0 3px;
+    cursor: pointer;
+    border-radius: 24px;
+    border:none;
+}
+
+.main_button{
+    border-color: purple;
+    border-radius: 24px;
+    font-family: 'Baloo 2', cursive;
+    background:none;
+    font-weight:bold;
+    font-size: 20px;
+
+}
+                                                                                                        
