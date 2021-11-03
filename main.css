@@ -222,7 +222,7 @@ body{
 	width: 400px;
 	transition-property: height,width,box-shadow;
     transition-duration: .2s;
-    transition-timing-function: linear;
+    transition-timing-function:linear;
 }
 #states {
 	width:100% ;
