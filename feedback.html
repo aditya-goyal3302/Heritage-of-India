@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="common.css">
+    <title>Feedback Form</title>
+    <style type="text/css">
+    #footer{
+    top:1150px;
+    }
+    #white{
+        height: 600px;
+}
+    </style>
+</head>
+<body>
+    <header class="head">
+        <div class="top_title_and_logo">
+            <h1> <img class="logo" src="project/18178417-label-of-india-heritage.png"> Heritage Of India  </h1>
+        </div>
+
+        <div class="top_list">
+            <ul class="menu">
+                <li><div class="black_button"><button class ="black-border"> <a id="black-border"  href="main.html"><img id="home_img" src="project/download.png" height=20px ></a></button></div> </li>
+                <li><div class="black_button dropdown"><button class ="black-border"> States</button>
+                    <div class="dropdown-content">
+                        <a href="goa.html">Goa</a>
+                        <a href="gujrat.html">Gujrat</a>
+                        <a href="jammukashmir.html">Jamu kashmir</a>
+                        <a href="kerla.html">kerla</a>
+                        <a href="maharastra.html">Maharastra</a>
+                        <a href="uttarpardesh.html">Uttar Pardesh</a>
+                      </div>
+                </div></li>
+                <li><div class="black_button"><button class ="black-border"> <a id="black-border"  href="#contact_info">Contact us</a> </button></div></li>
+                <li><div class="black_button"><button class ="black-border"> <a id="black-border"  href="feedback.html">Feedback</a> </button></div></li>
+                <li><div class="red_button black_button"><button class ="black-border"> <a id="black-border" href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/non-us-settings/hcf-visitors.html">Covid-19</a> </button></div> </li>
+
+        </div>       
+        </div>
+
+    </header>
+
+    <div class="main_image_container" id="main_image_container"> 
+            <div class="notice"></div>
+    <img class="main_image" src="https://informatix.com.au/wp-content/uploads/online-survey-feedback.jpg">
+    </div>
+
+    <main id="white" >
+        <div style="margin-top: 100px;">
+            <img src="project/download (2).png" style=" margin-left:5vw;margin-top: -2%; float: left; width: 40vw;" >
+            <form id="form1" style="float: right;">
+                <table >
+                    
+                        <label for="name">Name<span style="color:red; font-size: 1.6rem"><sup>*</sup></span></label><br>
+                        <input type="text" name="name" id="name" oninput="f1()" required> <br><br>
+                    
+
+                    
+                        <label for="name">E-Mail<span style="color:red; font-size: 1.6rem"><sup>*</sup></span></label><br>
+                        <input type="email" name="email" id="email" oninput="f2()" required> <br><br>
+                    
+
+                    
+                        <label for="name">Feedback<span style="color:red; font-size: 1.6rem"><sup>*</sup></span></label><br>
+                        <input type="text" name="Message" id="Message" oninput="f3()" required> <br><br>
+                    
+            </form>
+                    
+                        <button type="submit" name="submit" id="submit" onclick="vote()">SUBMIT</button><br>
+                    
+                </table>
+        </div>
+    </main>
+
+    <footer id="footer"> 
+        <div class="contact_info" id="contact_info" name="contactINFO" style=" justify-content:center;">
+        <table style="padding:20px; justify-content:center;">
+         <tr>
+            <td class="side">
+              <h class="downton">The Developer</h>
+              <p>2505 - Aditya Goyal</p>
+            </td>
+            <td class="side">
+              <h class="downton">Our Social media</h><br>
+              <span><a href="https://www.facebook.com/"><lable>Facebook</lable></a></span>&ensp;&ensp;&ensp;
+              <span><a href="https://twitter.com/"><lable>Twitter</lable></a></span><br>
+              <span><a href="https://www.linkedin.com/in/"><lable>LinkenIn</lable></a></span>&ensp;&ensp;
+              <span><a href="https://instagram.com/"><lable>Instagram</lable></a></span>
+            </td>
+            <td class="side">
+                <h class="downton"> WANNA HEAR FROM US??</h> <br>
+                <h class="wanna_hear">Subscribe to our news letter</h><br>
+                <input type="email" placeholder="Your Email" style="border-radius:10px; justify-content:center; text-align: center; background-color: hotpink;" id="news" ><br><br>
+                <button class="newsletter-submit" onclick="submit()">SUBMIT</button>
+            </td>
+            <td>
+                <h class="downton">Ping Us At..</h><br>
+                <p class="emails">agoyal2505.ca21@chitkara.edu.in</p>
+            </td>
+        </tr>  
+     </table>
+  </div> 
+    </footer>
+
+    <script src="common.js"></script>
+</body>
+</html>

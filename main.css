@@ -33,7 +33,7 @@ h2{
 	transition-property: background-image;
     transition-duration:        1s;
     transition-timing-function:linear;
-	background-image: url(project/Screenshot\ 2021-10-20\ 133254.png);
+    background-image: url(project/down.png);
 }
 
 .logo{
@@ -53,7 +53,7 @@ h2{
 	width: 100vw;
 	float: left;
 	margin-left: 80px;
-	margin-right: -61%;
+	margin-right: -61vw;
     height: 96px;
 	text-decoration:underline ;
 	text-decoration-color: rgb(247, 205, 114);
@@ -61,9 +61,10 @@ h2{
 }
 
 .top_list{
-	width: 500px;
+	float: right;
+	width: 40vw;
 	height: 96px;
-	padding-left: 25%;
+	padding-left: 15%;
 	margin-left: -52px;
 	display: flex ;
 	flex-direction: row;
@@ -238,7 +239,8 @@ body{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
-	padding:80px 0px;
+	margin-top: -90px;
+	padding:90px 0px;
 	position:static;
 }
 
@@ -261,7 +263,7 @@ body{
 
 }
 .contact_info{
-	height:240px;
+	height:245px;
 	color: white;
 	text-align: center;
 	background-image: url(https://cdn.wallpapersafari.com/23/30/rfbQ4s.jpg);
@@ -270,7 +272,8 @@ body{
 }
 
 td{	padding:10px;
-	border:none; color:white;
+	border:none; 
+	color:white;
 	width:400px;
 	justify-content:center;
 	align-content:center;

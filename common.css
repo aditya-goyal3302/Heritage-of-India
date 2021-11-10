@@ -35,7 +35,7 @@ h2{
     transition-property: background-image;
     transition-duration: .3s;
     transition-timing-function:ease;
-    background-image: url(project/Screenshot\ 2021-10-20\ 133254.png);
+    background-image: url(project/down.png);
 }
 
 .logo{
@@ -52,24 +52,25 @@ h2{
 }
 
 .top_title_and_logo{
-    width: 100vw;
-    float: left;
-    margin-left: 80px;
-    margin-right: -61%;
+	width: 100vw;
+	float: left;
+	margin-left: 80px;
+	margin-right: -61vw;
     height: 96px;
-    text-decoration:underline ;
-    text-decoration-color: rgb(247, 205, 114);
-    
+	text-decoration:underline ;
+	text-decoration-color: rgb(247, 205, 114);
+	
 }
 
 .top_list{
-    width: 500px;
-    height: 96px;
-    padding-left: 25%;
-    margin-left: -52px;
-    display: flex ;
-    flex-direction: row;
-    justify-content: space-between;
+	float: right;
+	width: 40vw;
+	height: 96px;
+	padding-left: 15%;
+	margin-left: -52px;
+	display: flex ;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
                                                                 /*menu*/
@@ -236,9 +237,71 @@ body{
     line-height: 1.8rem;
     font-family: monospace;
 }
+                                                    /* for only feedback form */
+#form1{
+    color: white;
+    font-size: 1.6rem;
+    position: relative;
+    width: 35vw;
+}
+
+input[type=text]{
+    height: 32px;
+    width: 20vw;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.407);
+}
+input[type=email]{
+    height: 32px;
+    width: 20vw;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+textarea {
+    width: 20vw;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+input[type=text]:hover{
+    background-color: rgba(255, 255, 255, 0.89);
+    transition-property: background-color;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+}
+input[type=email]:hover{
+    background-color: rgba(255, 255, 255, 0.89);
+    transition-property: background-color;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+}
+textarea:hover{
+    background-color: rgba(255, 255, 255, 0.89);
+    transition-property: background-color;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+}
+
+#submit{
+    position: relative;
+    margin-left: 20%;
+    margin-right: 80%;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.707);
+    background-color: rgba(255, 255, 255, 0.144);
+}
+#submit:hover{
+    color: black;
+    background-color: white;
+    box-shadow: 1px 1px 4px white;
+    transition-property: color,box-shadow, background-color;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+}
 
 
-													/*fottor*/
+													/*footor*/
 #footer{
     position:absolute;  
     margin-left:-8px; 
@@ -293,10 +356,9 @@ a{
 .newsletter-submit:hover{
     border:1px solid white;
 }
-img{
-    height:30px;
-    width:30px;
-    border-radius:10px;
+.side > input[type=email]{
+    width: 11vw;
+    height: 16px;
 }
 
 span{
