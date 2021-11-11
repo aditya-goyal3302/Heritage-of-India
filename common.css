@@ -49,6 +49,7 @@ h2{
     width: 99vw;
     height: 700px;
     margin-left: -8px;
+    z-index: 9;
 }
 
 .top_title_and_logo{
@@ -135,14 +136,13 @@ h2{
     border:none;
     font-family: "Monaco", Monospace;  
     color:rgba(0, 0, 0, 0.7) ;
-background:none;
-font-weight:bold;
-font-size: 1.4rem;
-height: 96px;
-text-decoration:none;
-letter-spacing: 0px;
-word-spacing: -5px;
-
+    background:none;
+    font-weight:bold;
+    font-size: 1.4rem;
+    height: 96px;
+    text-decoration:none;
+    letter-spacing: 0px;
+    word-spacing: -5px;
 }
 
 .black-border:hover{
@@ -190,21 +190,27 @@ word-spacing: -5px;
 
   																		/*body*/
                                                                           
-
+#main_image_container{
+    z-index: 99;
+    position: relative;
+}
 #white{
     margin: 0px 7.5vw;
     width: 85vw;
     background-color: black;
     border-radius: 15px;
-    position:absolute;
-    top:600px;
-    height: 1600px;
+    position:relative;
+    margin-top: -100px;
+    height: auto;
+    z-index: 999;
+    padding-top: 1px;
 }
 
 body{
     background-color: black;
     margin-top: -5px;
-    position: relative;
+    position: absolute;
+    width: 99%;
 }
 #data{
     display: flex;
@@ -237,6 +243,32 @@ body{
     line-height: 1.8rem;
     font-family: monospace;
 }
+#question{
+    margin-top: -50px;
+}
+#question>p{
+    padding-left: 5vw;
+    margin-top: -20px;
+    line-height: 3rem;
+}
+#question>p>a{
+    display: block;
+    font-family:sans-serif;
+    color: rgb(194, 165, 0);
+    font-family:Futura Medium, cursive;
+    font-size: xx-large;
+    line-height: 4rem;
+}
+#question>p>a:hover{
+    color: aqua;
+    
+}
+#question>div>h3{
+    color: white;
+    font-size: 2.8rem;
+    text-align: center;
+}
+
                                                     /* for only feedback form */
 #form1{
     color: white;
@@ -303,14 +335,14 @@ textarea:hover{
 
 													/*footor*/
 #footer{
-    position:absolute;  
+    position:relative;  
     margin-left:-8px; 
     margin-right:-8px;
     width: 99vw;
     padding-top: 100px ;
 }
 .contact_info{
-    height:240px;
+    height:auto;
     color: white;
     text-align: center;
     background-image: url(https://cdn.wallpapersafari.com/23/30/rfbQ4s.jpg);
@@ -318,7 +350,8 @@ textarea:hover{
     padding-left: 2%;
 }
 
-td{	padding:10px;
+td{	
+    padding:10px;
     border:none; color:white;
     width:400px;
     justify-content:center;
@@ -340,6 +373,52 @@ td.side{
     font-size:20px;
     padding:10px;
     font-family: 'Patrick Hand SC', cursive;
+}
+img{
+	border-radius:10px;
+}
+.social-btn:hover{
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.603);
+}
+#social .social-btn{
+    padding: 15px 5px 0px 5px;
+    color:#ffffff;
+	height:30px;
+	width:30px;
+}
+.social-img {
+	border-radius:0px;
+	height:30px;
+	width:30px;
+}
+.facebook{
+	background-color: #3b5998;
+}
+.linkedin{
+	background-color:#0077b5;
+}
+.twitter{
+	background-color:#83c3f3;
+}
+
+.whatsapp{
+	background-color:#6ba92f;
+}
+
+
+.facebook:hover{
+	background-color: #2d4373;
+}
+
+.linkedin:hover{
+	background-color:#2d4373;
+}
+.twitter:hover{
+	background-color:#55acee;
+}
+
+.whatsapp:hover{
+	background-color:#528124;
 }
 
 a{

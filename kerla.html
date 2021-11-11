@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset=“UTF-8”>
     <link rel="stylesheet" type="text/css" href="common.css">
     <style type="text/css">
-        #footer{
-        top:1850px;}
+        
         #data{
-    display: flex;
-    flex-direction: row;
-    
-}
-#data1{
-    display: inline-block;
-    width : 30%;
-}
-#data1>img{
-    height: 250px;
-    width: 425px;
-    margin-left: 15%;
-    margin-top: 23%;
-    margin-bottom: 40%;
-}
-#data1>img:hover{
-    box-shadow: 2px 2px 8px rgb(202, 202, 202);
-	transition-property: height,width,box-shadow;
-    transition-duration: .2s;
-    transition-timing-function: linear;
-}
-#data2{
-    width:60%;
-    margin-left: 5%;
-}
-#data2>span{
-    color:white;
-    line-height: 1.8rem;
-    font-family: monospace;
-}
+            display: flex;
+            flex-direction: row;
+        }
+        #data1{
+            display: inline-block;
+            width : 30%;
+        }
+        #data1>img{
+            height: 250px;
+            width: 425px;
+            margin-left: 15%;
+            margin-top: 23%;
+            margin-bottom: 40%;
+        }
+        #data1>img:hover{
+            box-shadow: 2px 2px 8px rgb(202, 202, 202);
+            transition-property: height,width,box-shadow;
+            transition-duration: .2s;
+            transition-timing-function: linear;
+        }
+        #data2{
+            width:60%;
+            margin-left: 5%;
+        }
+        #data2>span{
+            color:white;
+            line-height: 1.8rem;
+            font-family: monospace;
+        }
         </style>
     <title>Heritage Of Kerla</title>
 </head>
@@ -52,10 +51,10 @@
                     <div class="dropdown-content">
                         <a href="goa.html">Goa</a>
                         <a href="gujrat.html">Gujrat</a>
-                        <a href="maharastra.html">Maharastra</a>
                         <a href="jammukashmir.html">Jamu kashmir</a>
+                        <a href="kerla.html">Kerala</a>
+                        <a href="maharastra.html">Maharastra</a>
                         <a href="uttarpardesh.html">Uttar Pardesh</a>
-                        <a href="kerla.html">kerla</a>
                       </div>
                 </div></li>
                 <li><div class="black_button"><button class ="black-border"> <a id="black-border"  href="#contact_info">Contact us</a> </button></div></li>
@@ -69,7 +68,6 @@
 
    
         <div class="main_image_container" id="main_image_container"> 
-                <div class="notice"></div>
         <img class="main_image" src="https://wallpaperaccess.com/full/1635201.jpg">
         </div>
 
@@ -78,7 +76,7 @@
 
 
         <div >
-            <h1 style="text-decoration: underline;text-align: center; font-family: open sans; text-decoration-color:rgba(243, 123, 54,0.8); font-size: 60px; color:rgb(243, 123, 54);">KERLA</h1>
+            <h1 style="text-decoration: underline;text-align: center; font-family: open sans; text-decoration-color:rgba(243, 123, 54,0.8); font-size: 60px; color:rgb(243, 123, 54);">KERALA</h1>
         </div>
 
         <div id="data">
@@ -101,6 +99,12 @@
                 </span>
             </div>
         </div>
+
+        <div id="question">
+            <div><h3>Frequently Asked Questions.. </h3></div>
+            <p><a href=" https://www.tripadvisor.com/Travel-g297631-s208/Kerala:India:Weather.And.When.To.Go.html"> &#x1F449; What is the rainy season in Kerala?</a>
+            <a href=" https://en.wikipedia.org/wiki/Kerala_cuisine"> &#x1F449; What is the Speciality of Kerala food?</a></p>
+        </div>
     </main>
 
 
@@ -112,13 +116,15 @@
               <h class="downton">The Developer</h>
               <p>2505 - Aditya Goyal</p>
           </td>
-          <td class="side">
-              <h class="downton">Our Social media</h><br>
-              <span><a href="https://www.facebook.com/"><lable>Facebook</lable></a></span>&ensp;&ensp;&ensp;
-              <span><a href="https://twitter.com/"><lable>Twitter</lable></a></span><br>
-              <span><a href="https://www.linkedin.com/in/"><lable>LinkenIn</lable></a></span>&ensp;&ensp;
-              <span><a href="https://instagram.com/"><lable>Instagram</lable></a></span>
-          </td>
+          <td class="side" id="social">
+            <h class="downton">Our Social media</h><br>
+            <div style="margin-top: 20px ;">
+                <span class="facebook social-btn"><a href="https://www.facebook.com/"><lable><img class="social-img" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000014_1549330414_facebook-logo.png" alt="fb" ></lable></a></span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                <span class="twitter social-btn"><a href="https://twitter.com/"><img class="social-img" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000016_1549330452_twitter-logo.png" alt="twi" height="30px" length="30px"></lable></a></span><br><br>
+                <span class="linkedin social-btn"><a href="https://www.linkedin.com/in/"><lable><img class="social-img" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000015_1549330433_linkedin-logo.png" alt="in" ></lable></a></span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                <span class="whatsapp social-btn"><a href="https://wa.me/917056139358"><lable><img class="social-img" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000018_1549330485_whatsapp-logo.png" alt="w-app"></lable></a></span>
+            </div>
+        </td>
           <td class="side">
               <h class="downton"> WANNA HEAR FROM US??</h> <br>
               <h class="wanna_hear">Subscribe to our news letter</h><br>
