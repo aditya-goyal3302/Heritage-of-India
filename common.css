@@ -214,19 +214,20 @@ body{
 }
 #data{
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: column;
+    position: relative;
 }
 #data1{
     display: inline-block;
-    width : 30%;
+    position: relative;
+    width : 20vw;
 }
 #data1>img{
-    height: 250px;
-    width: 425px;
-    margin-left: 15%;
-    margin-top: 20%;
-    margin-bottom: 40%;
+    height: 25vh;
+    width: 22vw;
+    margin-left: 3vw;
+    margin-top: 12vh;
+    margin-bottom: auto;
 }
 #data1>img:hover{
     box-shadow: 2px 2px 8px rgb(202, 202, 202);
@@ -235,17 +236,17 @@ body{
     transition-timing-function: linear;
 }
 #data2{
-    width:60%;
-    margin-left: 5%;
+    width:50vw;
+    position: relative;
+    margin-right: 5vw;
 }
 #data2>span{
     color:white;
     line-height: 1.8rem;
     font-family: monospace;
+    font-size:x-large;
 }
-#question{
-    margin-top: -50px;
-}
+
 #question>p{
     padding-left: 5vw;
     margin-top: -20px;
